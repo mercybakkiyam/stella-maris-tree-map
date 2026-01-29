@@ -82,13 +82,13 @@ map.on('drag', function () {
 // 3. ICONS
 // ===============================
 const icons = {
-  palm: L.icon({ iconUrl: 'images/palm.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  neem: L.icon({ iconUrl: 'images/neem.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  fruit: L.icon({ iconUrl: 'images/fruit.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  avenue: L.icon({ iconUrl: 'images/tall.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  flower: L.icon({ iconUrl: 'images/flower.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  coconut: L.icon({ iconUrl: 'images/coconut.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  other: L.icon({ iconUrl: 'images/treee.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]})
+  palm: L.icon({ iconUrl: 'palm.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  neem: L.icon({ iconUrl: 'neem.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  fruit: L.icon({ iconUrl: 'fruit.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  avenue: L.icon({ iconUrl: 'tall.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  flower: L.icon({ iconUrl: 'flower.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  coconut: L.icon({ iconUrl: 'coconut.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  other: L.icon({ iconUrl: 'treee.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]})
 };
 
 // ===============================
@@ -181,7 +181,7 @@ Papa.parse("trees.csv", {
 
       const popupContent = `
         <div class="popup-card">
-          <img src="${tree.Image || 'images/default_tree.png'}">
+          <img src="${tree.Image || 'default_tree.png'}">
           <div class="popup-content">
             <p><span class="label">Name:</span> ${tree.TreeName}</p>
             <p><span class="label">Botanical Name:</span> ${tree.BotanicalName}</p>
@@ -233,4 +233,5 @@ document.getElementById("treeSearch").addEventListener("input", e => {
     searchText = e.target.value.toLowerCase();
     refreshMarkers();
   }, 300);
+
 });
