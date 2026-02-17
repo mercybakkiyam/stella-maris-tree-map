@@ -8,7 +8,7 @@ const campusBounds = [
 
 
 
-// ===============================
+// =============================
 // 2. MAP
 // ===============================
 const map = L.map('map', {
@@ -243,6 +243,7 @@ document.getElementById("treeSearch").addEventListener("input", e => {
   }, 300);
 
 });
+
 
 
 
