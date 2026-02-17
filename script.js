@@ -106,7 +106,7 @@ function getTreeCategory(name) {
   if (name.includes("neem"))
     return "neem";
 
-  if (name.includes("mango") || name.includes("jack") || name.includes("guava") || name.includes("tamarind") || name.includes("cashew"))
+  if (name.includes("mango") || name.includes("jack") || name.includes("guava")|| name.includes("cow tamarind") || name.includes("cashew"))
     return "fruit";
 
   if (name.includes("ashoka") || name.includes("polyalthia") || name.includes("christmas"))
@@ -114,6 +114,8 @@ function getTreeCategory(name) {
 
   if (name.includes("gulmohar") || name.includes("jacaranda") || name.includes("peepal"))
     return "flower";
+  
+  if (name.includes("tamarind"))
 
   return "other";
 }
