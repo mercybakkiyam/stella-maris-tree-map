@@ -88,6 +88,7 @@ const icons = {
   avenue: L.icon({ iconUrl: 'tall.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   flower: L.icon({ iconUrl: 'flower.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   tamarind: L.icon({ iconUrl: 'tamarind.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  heritage: L.icon({ iconUrl: 'heritage.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   coconut: L.icon({ iconUrl: 'coconut.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   other: L.icon({ iconUrl: 'treee.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]})
 };
@@ -118,6 +119,9 @@ function getTreeCategory(name) {
   
   if (name.includes("tamarind"))
     return "tamarind"
+  
+  if (name.includes("heritage"))
+    return "heritage"
 
   return "other";
 }
@@ -241,5 +245,6 @@ document.getElementById("treeSearch").addEventListener("input", e => {
   }, 300);
 
 });
+
 
 
