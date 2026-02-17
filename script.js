@@ -87,8 +87,8 @@ const icons = {
   fruit: L.icon({ iconUrl: 'fruit.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   avenue: L.icon({ iconUrl: 'tall.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   flower: L.icon({ iconUrl: 'flower.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
-  tamarind: L.icon({ iconUrl: 'tamarind.png', iconSize: [100,200], iconAnchor:[100,200], popupAnchor:[0,-200]}),
-  heritage: L.icon({ iconUrl: 'heritage.png', iconSize: [200,100], iconAnchor:[100,100], popupAnchor:[0,-100]}),
+  tamarind: L.icon({ iconUrl: 'tamarind.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
+  heritage: L.icon({ iconUrl: 'heritage.png', iconSize: [100,100], iconAnchor:[50,100], popupAnchor:[0,-100]}),
   coconut: L.icon({ iconUrl: 'coconut.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]}),
   other: L.icon({ iconUrl: 'treee.png', iconSize: [32,32], iconAnchor:[16,32], popupAnchor:[0,-32]})
 };
@@ -245,6 +245,7 @@ document.getElementById("treeSearch").addEventListener("input", e => {
   }, 300);
 
 });
+
 
 
 
