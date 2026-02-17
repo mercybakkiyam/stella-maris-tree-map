@@ -193,8 +193,6 @@ Papa.parse("trees.csv", {
           <div class="popup-content">
             <p><span class="label">Name:</span> ${tree.TreeName}</p>
             <p><span class="label">Botanical Name:</span> ${tree.BotanicalName}</p>
-            //<p><span class="label">Location:</span> ${tree.Latitude}</p>
-            //<p><span class="label">Location:</span> ${tree.Longitude}</p>
             <a href="${tree.Link}" target="_blank">Tree Tales</a>
           </div>
         </div>
@@ -245,6 +243,7 @@ document.getElementById("treeSearch").addEventListener("input", e => {
   }, 300);
 
 });
+
 
 
 
